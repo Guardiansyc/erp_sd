@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--设置输出日志-->
+    <!--<settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>-->
+
+    <!--设置别名-->
+    <typeAliases>
+        <package name="com.erp_sd.domain"/>
+    </typeAliases>
+
+    <!--<plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>-->
+
+    <!--sql mapper(sql映射文件)的位置-->
+    <mappers>
+        <!--mapper文件名必须与dao接口名完全一样且在同一目录下-->
+        <package name="com/erp_sd/dao"/>
+    </mappers>
+</configuration>
